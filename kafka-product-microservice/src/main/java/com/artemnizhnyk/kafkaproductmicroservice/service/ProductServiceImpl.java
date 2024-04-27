@@ -1,7 +1,7 @@
 package com.artemnizhnyk.kafkaproductmicroservice.service;
 
+import com.artemnizhnyk.core.event.ProductCreatedEvent;
 import com.artemnizhnyk.kafkaproductmicroservice.web.dto.CreateProductDto;
-import com.artemnizhnyk.kafkaproductmicroservice.web.event.ProductCreatedEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;

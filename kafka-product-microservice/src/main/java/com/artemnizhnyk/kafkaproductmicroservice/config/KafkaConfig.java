@@ -1,6 +1,7 @@
 package com.artemnizhnyk.kafkaproductmicroservice.config;
 
-import com.artemnizhnyk.kafkaproductmicroservice.web.event.ProductCreatedEvent;
+
+import com.artemnizhnyk.core.event.ProductCreatedEvent;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,7 +24,7 @@ public class KafkaConfig {
     private String keySerializer;
     @Value("${spring.kafka.producer.value-serializer}")
     private String valueSerializer;
-    @Value("${spring.kafka.producer.acs}")
+    @Value("${spring.kafka.producer.acks}")
     private String acks;
     @Value("${spring.kafka.producer.properties.delivery.timeout.ms}")
     private String deliveryTimeout;
