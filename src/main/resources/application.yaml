@@ -20,6 +20,15 @@ spring:
         request:
           timeout:
             ms: 5000
+        enable:
+          idempotence: true
+        max:
+          in:
+            flight:
+              requests:
+                per:
+                  connection: 5
+
 #      retries: 10
 #      properties:
 #        retry:
